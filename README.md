@@ -2,8 +2,7 @@
 
 
 
-# WebApi  
-   
+# Lab 6
 ## Empezando  
   
 Para ejecutar el programa solo debe decargar este link 
