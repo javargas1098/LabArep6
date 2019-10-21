@@ -1,14 +1,4 @@
-net.javaguides.springboot.springsecurity
-springboot.security
 springboot.security.calcu
 springboot.security.calcu.controller
 springboot.security.calcu.service
 springboot.security.calcu.service.imp
-springboot.security.config
-springboot.security.constraint
-springboot.security.controller
-springboot.security.database
-springboot.security.model
-springboot.security.repository
-springboot.security.service
-springboot.security.web.dto

@@ -1,0 +1,10 @@
+net.javaguides.springboot.springsecurity
+springboot.security
+springboot.security.config
+springboot.security.constraint
+springboot.security.controller
+springboot.security.database
+springboot.security.model
+springboot.security.repository
+springboot.security.service
+springboot.security.web.dto
