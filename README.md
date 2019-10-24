@@ -11,13 +11,13 @@ Para ejecutar el programa solo debe decargar este link
  - ###  Calcu
  - ###  springboot-security
  
-  Las rutas del servicio  son:
+  Luego de que cada uno de los paquetes se este ejecutando se pueden acceder a los siguiente servicios:
  
  - [Login](https://localhost:9001/login) 
  - [Registro](https://localhost:9001/registration)
  
  
- Luego de haber sido logeado correactamente se puede accedes a lo siguientes servicios:
+ Luego de haber sido logeado correactamente se puede acceder a las siguientes funciones:
  
  - [Suma](https://localhost:9001/math/data/server/sum)
  - [Resta](https://localhost:9001/math/data/server/res)
