@@ -29,7 +29,7 @@ public class calController {
 	@GetMapping("/sum/{num1}/{num2}")
 	public ResponseEntity<?> getSum(@PathVariable double num1, @PathVariable double num2) {
 		try {
-			return new ResponseEntity<>(calServices.makeOperation(num1, num2, "+"), HttpStatus.OK);
+			return new ResponseEntity<>(calServices.Operations(num1, num2, "1"), HttpStatus.OK);
 		} catch (Exception ex) {
 			return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_ACCEPTABLE);
 		}
@@ -38,7 +38,7 @@ public class calController {
 	@GetMapping("/res/{num1}/{num2}")
 	public ResponseEntity<?> getRest(@PathVariable double num1, @PathVariable double num2) {
 		try {
-			return new ResponseEntity<>(calServices.makeOperation(num1, num2, "-"), HttpStatus.OK);
+			return new ResponseEntity<>(calServices.Operations(num1, num2, "2"), HttpStatus.OK);
 		} catch (Exception ex) {
 			return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_ACCEPTABLE);
 		}
@@ -47,7 +47,7 @@ public class calController {
 	@GetMapping("/mul/{num1}/{num2}")
 	public ResponseEntity<?> getMultiplication(@PathVariable double num1, @PathVariable double num2) {
 		try {
-			return new ResponseEntity<>(calServices.makeOperation(num1, num2, "*"), HttpStatus.OK);
+			return new ResponseEntity<>(calServices.Operations(num1, num2, "3"), HttpStatus.OK);
 		} catch (Exception ex) {
 			return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_ACCEPTABLE);
 		}
@@ -56,7 +56,7 @@ public class calController {
 	@GetMapping("/div/{num1}/{num2}")
 	public ResponseEntity<?> getDivision(@PathVariable double num1, @PathVariable double num2) {
 		try {
-			return new ResponseEntity<>(calServices.makeOperation(num1, num2, "/"), HttpStatus.OK);
+			return new ResponseEntity<>(calServices.Operations(num1, num2, "4"), HttpStatus.OK);
 		} catch (Exception ex) {
 			return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_ACCEPTABLE);
 		}
