@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.beans.factory.annotation.Value;
 
 
+/**
+ * esta clse es usada la representar al concexion a la base de datos
+ */
 
 @Component
 public class RepositoryDataBase {

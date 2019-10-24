@@ -5,6 +5,10 @@ import javax.validation.ConstraintValidatorContext;
 
 import org.apache.commons.beanutils.BeanUtils;
 
+
+/**
+ * Esta clase revisa sin los campos donde se debe repetir la informacion son iguales o no  
+ */
 public class FieldMatchValidator implements ConstraintValidator<FieldMatch, Object> {
 
     private String firstFieldName;

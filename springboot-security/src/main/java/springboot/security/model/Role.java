@@ -5,6 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+/**
+ *   
+ *   Esta clase representa el rol de usuario 
+ */
 @Entity
 public class Role {
 

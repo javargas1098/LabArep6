@@ -15,6 +15,10 @@ import springboot.security.model.User;
 import springboot.security.service.UserService;
 import springboot.security.web.dto.UserRegistrationDto;
 
+/**
+ * Esta clase representa el registration controler de la aplicacion, y funciona con spring security
+ * 
+ */
 @Controller
 @RequestMapping("/registration")
 public class UserRegistrationController {

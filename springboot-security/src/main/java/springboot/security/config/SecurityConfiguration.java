@@ -1,6 +1,7 @@
 package springboot.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -12,6 +13,10 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import springboot.security.service.UserService;
 
+
+/**
+ * Cpnfiguracion de seguridad la paguina web
+ */
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 

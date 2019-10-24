@@ -17,6 +17,10 @@ import springboot.security.model.User;
 import springboot.security.repository.UserRepository;
 import springboot.security.web.dto.UserRegistrationDto;
 
+
+/**
+ * Esta clase representa el servio del login y registro 
+ */
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -25,11 +29,18 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
-
+    /**
+    *
+    * @param email   that will be consulted to recognize if there are db
+    * @return User that has a email equals that param email
+    */
     public User findByEmail(String email){
         return userRepository.findByEmail(email);
     }
-
+    /**
+    *
+    * @param user to be saved in the database
+    */
     public User save(UserRegistrationDto registration){
         User user = new User();
         user.setFirstName(registration.getFirstName());
@@ -39,7 +50,10 @@ public class UserServiceImpl implements UserService {
         user.setRoles(Arrays.asList(new Role("ROLE_USER")));
         return userRepository.save(user);
     }
-
+    /**
+    *
+    * @param user to load from database
+    */
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(email);

@@ -10,6 +10,10 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URI;
 
 
+
+/**
+ *Este controlador es usado para hacer la peticiones de la calculadora y desde aca se hacen las peticiones al otro api(CALCU)
+ */
 @RestController
 @RequestMapping(value="/math")
 public class MathController {

@@ -3,6 +3,11 @@ package springboot.security.model;
 import javax.persistence.*;
 import java.util.Collection;
 
+
+/**
+ *   
+ *   Esta clase representa el Pojo del Usuario
+ */
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class User {
